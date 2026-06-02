@@ -1,0 +1,1 @@
+Aplikacja budżetowa autor Artur Lech :)
