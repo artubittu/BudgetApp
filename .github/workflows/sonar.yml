@@ -3,7 +3,7 @@ name: SonarCloud CI
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     types: [opened, synchronize, reopened]
 
@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: 25
-          distribution: zulu
+          distribution: "zulu"
 
       - name: Cache Maven
         uses: actions/cache@v4
