@@ -23,7 +23,7 @@ const RegisterPage: React.FC = () => {
 
     if (!email.trim()) {
       newErrors.email = 'Email jest wymagany.';
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       newErrors.email = 'Nieprawidłowy format email.';
     }
 
